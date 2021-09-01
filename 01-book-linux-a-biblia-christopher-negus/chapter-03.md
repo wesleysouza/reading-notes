@@ -148,7 +148,7 @@ NAME  LINE  TIME          IDLE  PID   COMMENT
 user  tty1  Jan 13 20:57  .     2013  
 ```
 
-A saída desse who mostra que:
+A saída desse comando who mostra que:
 - O usuário user está logado no tty1 (que é o primeiro console virtual conectado ao computador) e a sua sessão de login começou às 20:57 am 13 de janeiro; 
 - O tempo IDLE mostra quanto tempo o shell ficou aberto sem qualquer comando ser digitado (o ponto indica que ele está sendo utilizando no momento); 
 - O PID mostra o ID do processo do shell de login do usuário; 
