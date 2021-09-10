@@ -7,11 +7,14 @@ Verificando o nome do usuário e depois o shell:
 $ whoami
 user
 ```
+
+Verficando definição de conta de usuário no arquivo **/etc/password**:
+
 ```shell
 $ grep user /etc/passwd
 user:x:1000:1000:user,,,:/home/user:/bin/bash
 ```
-O comando grep user /etc/passwd exibe a definição de sua conta de usuário no arquivo /etc/password. Observando o último campo é possível identificar que o shell é o bash que está como padrão no sistema.
+Observe que no último campo é possível identificar que o shell é o bash que está como padrão no sistema.
 
 Para saber mais informações do shell utilize o man, ele fornece a documentação para os comandos, formatos de arquivos e outros componentes do linux. Executando o man para o shell:
 
@@ -91,7 +94,7 @@ $ cat /etc/passwd
 ```
 Exibe o conteúdo do arquivo /etc/passwd em sua tela. Nesse caso, /etc/passwd é o argumento.
 
-Em alguns casos os argumentos estão associados a uma opção. Nesses casos, o argumento deve ser imediatamente seguido da opção, com duas diferenças:
+Em alguns casos os argumentos estão associados a uma opção. Desse modo, o argumento deve ser imediatamente seguido da opção, com duas diferenças:
 1. Com opções de uma única letra, o argumento geralmente vem depois de um espaço;
 2. Para opções de uma palavra, o argumento muitas vezes vem depois de um sinal de igual (=).
 
